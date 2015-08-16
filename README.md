@@ -1,5 +1,5 @@
-# css-naming-conventions
-A collection of BEM style naming conventions .
+# CSS Naming Conventions
+A collection of BEM style naming conventions.
 
 ---
 
