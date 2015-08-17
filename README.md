@@ -13,10 +13,22 @@ While learning from these approaches and [using them in my projects](https://css
 My prefered naming conventions follows the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) very closely:
 
 ```
-.myComponent {}                 /* camelCase component name */
-.myComponent--modifier {}       /* Two dashes for the modifier */
-  .myComponent-subComponent {}  /* One dash for the subcomponent */
-.myComponent.is-active {}       /* Chain state classes  */
+/* Components */
+.myComponent {}                     /* Components - camelCase component name */
+.myComponent--modifier {}           /* Modifiers - Two dashes for the modifier */
+  .myComponent-subComponent {}      /* Subcomponent - One dash for the subcomponent */
+
+/* States */
+.myComponent.is-active {}           /* State classes are chained */
+
+/* Objects */
+.o-myObject {}                      /* Object classes are prefixed with `o-` */
+
+/* Utils */
+.u-myHelper {}                      /* Utility classes are prefixed with `u-` */
+
+/* Javascript Hooks */
+.js-myComponent {}                  /* JavaScript classes are prefixed with `js-` and ONLY used as a JS hook */
 
 ```
 
@@ -132,39 +144,64 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 ```
 
 
-## Objects
+## States
+State classes are prefixed with a keyword that makes sense for the state.
+
 ```
-.nav
-.nav--fit
-.nav--stacked
+.is-active
+.is-animating
+.is-hidden
+
+```
+
+
+## Objects
+Object classes are prefixed with `o-`
+
+```
+.o-nav
+.o-nav--fit
+.o-nav--stacked
+
+.o-island
+.o-island--sm
+.o-island--lg
 
 /** 
  * Media 
  *
  * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
  */
-.media
-  .media-img
-  .media-img--rev
-  .media-body
+.o-media
+  .o-media-img
+  .o-media-img--rev
+  .o-media-body
 
 /** 
  * Flag 
  *
  * http://csswizardry.com/2013/05/the-flag-object/
  */
-.flag
-  .flag-img
-  .flag-body 
-.flag--top
-.flag--bottom
-.flag--rev
+.o-flag
+  .o-flag-img
+  .o-flag-body 
+.o-flag--top
+.o-flag--bottom
+.o-flag--rev
 
 ```
 
 
-## Utils
+## Utility 
+Utility classes are prefixed with `u-`
+
 ```
+.u-baseSpacing
+.u-baseSpacing--top
+.u-baseSpacing--bottom
+.u-baseSpacing--left
+.u-baseSpacing--right
+
 .u-clearfix
 
 .u-pullLeft
@@ -178,6 +215,8 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 .u-textLowercase
 .u-textNoWrap
 .u-textTruncate
+.u-textLoud
+.u-textQuiet
 
 ```
 
