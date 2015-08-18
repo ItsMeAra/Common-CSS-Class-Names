@@ -2,9 +2,9 @@
 
 A collection of common CSS naming conventions based on Components, Subcomponents, and Modifiers. 
 
-Over the last few years I've really enjoyed seeing the evolution of [HTML semantics & front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/) and how it's introduced clever methodologies that make CSS more readable, scaleable, and intuitive. I've really enjoyed implementing and learning about [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](http://smacss.com) by [Johnathan Snook](https://twitter.com/snookca), and the [BEM Methodology](http://bem.info/) by Yandex. 
+Over the last few years I've enjoyed seeing the evolution of [HTML semantics & front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/). It's introduced clever methodologies that make CSS more scalable and intuitive, such as [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](http://smacss.com) by [Johnathan Snook](https://twitter.com/snookca), and the [BEM Methodology](http://bem.info/) by Yandex. 
 
-While learning from these approaches and [using them in my projects](https://css-tricks.com/design-systems-building-future/) I realized that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions that utilize the methodologies mentioned above. Feel free to fork, remix, and do as you please. 
+While learning from these approaches and [using them in my projects](https://css-tricks.com/design-systems-building-future/) I realized that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions that utilize the methodologies mentioned above. Feel free to fork, remix, and use as you please. 
 
 ---
 
