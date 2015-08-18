@@ -50,6 +50,7 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 .list
   .list-item
 .list--bare
+.list--group
 
 .form
   .form-fields
@@ -81,6 +82,7 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
   .table-td
 .table--striped
 .table--bordered
+.table--responsive
 
 .btn
 .btn--default
@@ -89,6 +91,7 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 .btn--pill
 .btn--soft
 .btn--hard
+
 ```
 
 ## Custom Components
@@ -110,6 +113,12 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 .accordion--vertical
 .accordion--horizontal
 
+.badge
+.badge--sm
+.badge--lg
+
+.btnGroup
+
 .carousel
   .carousel-item
   .carousel-controls
@@ -118,13 +127,83 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
   .dropdown-trigger
   .dropdown-content
 
-.flexEmbed
-  .flexEmbed-ratio
-  .flexEmbed-ratio--3by1
-  .flexEmbed-ratio--2by1
-  .flexEmbed-ratio--16by9
-  .flexEmbed-ratio--4by3
-  .flexEmbed-content
+.grid
+.grid--centered
+.grid--collapsed
+  .grid-row
+  .grid-col
+  .grid-col--1
+  .grid-col--2
+  .grid-col--3
+  .grid-col--4
+  .grid-col--5
+  .grid-col--6
+  .grid-col--7
+  .grid-col--8
+  .grid-col--9
+  .grid-col--10
+  .grid-col--11
+  .grid-col--12
+  .grid-col--xsm1
+  .grid-col--xsm2
+  .grid-col--xsm3
+  .grid-col--xsm4
+  .grid-col--xsm5
+  .grid-col--xsm6
+  .grid-col--xsm7
+  .grid-col--xsm8
+  .grid-col--xsm9
+  .grid-col--xsm10
+  .grid-col--xsm11
+  .grid-col--xsm12   
+  .grid-col--sm1
+  .grid-col--sm2
+  .grid-col--sm3
+  .grid-col--sm4
+  .grid-col--sm5
+  .grid-col--sm6
+  .grid-col--sm7
+  .grid-col--sm8
+  .grid-col--sm9
+  .grid-col--sm10
+  .grid-col--sm11
+  .grid-col--sm12  
+  .grid-col--md1
+  .grid-col--md2
+  .grid-col--md3
+  .grid-col--md4
+  .grid-col--md5
+  .grid-col--md6
+  .grid-col--md7
+  .grid-col--md8
+  .grid-col--md9
+  .grid-col--md10
+  .grid-col--md11
+  .grid-col--md12  
+  .grid-col--lg1
+  .grid-col--lg2
+  .grid-col--lg3
+  .grid-col--lg4
+  .grid-col--lg5
+  .grid-col--lg6
+  .grid-col--lg7
+  .grid-col--lg8
+  .grid-col--lg9
+  .grid-col--lg10
+  .grid-col--lg11
+  .grid-col--lg12  
+  .grid-col--xlg1
+  .grid-col--xlg2
+  .grid-col--xlg3
+  .grid-col--xlg4
+  .grid-col--xlg5
+  .grid-col--xlg6
+  .grid-col--xlg7
+  .grid-col--xlg8
+  .grid-col--xlg9
+  .grid-col--xlg10
+  .grid-col--xlg11
+  .grid-col--xlg12      
 
 .hero
   .hero-content
@@ -138,8 +217,24 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
   .modal-footer
 
 .navbar
-  
-.pagination
+
+.icon
+.icon--xsm
+.icon--sm
+.icon--lg
+.icon--xlg
+
+.siteWrapper  
+.siteHeader
+.siteFooter
+
+.strip
+.strip--light
+.strip--dark
+.strip--xsm
+.strip--sm
+.strip--lg
+.strip--xlg
   
 ```
 
@@ -150,7 +245,10 @@ State classes are prefixed with a keyword that makes sense for the state.
 ```
 .is-active
 .is-animating
+.is-collapsed
 .is-hidden
+.is-pressed
+.is-selected
 
 ```
 
@@ -159,13 +257,25 @@ State classes are prefixed with a keyword that makes sense for the state.
 Object classes are prefixed with `o-`
 
 ```
+.o-flexEmbed
+  .o-flexEmbed-ratio
+  .o-flexEmbed-ratio--3by1
+  .o-flexEmbed-ratio--2by1
+  .o-flexEmbed-ratio--16by9
+  .o-flexEmbed-ratio--4by3
+  .o-flexEmbed-content
+
 .o-nav
 .o-nav--fit
 .o-nav--stacked
+.o-nav--pagination
+.o-nav--keywords
 
 .o-island
+.o-island--xsm
 .o-island--sm
 .o-island--lg
+.o-island--xlg
 
 /** 
  * Media 
@@ -203,6 +313,15 @@ Utility classes are prefixed with `u-`
 .u-baseSpacing--right
 
 .u-clearfix
+
+u-block
+u-hidden
+u-hiddenVisually 
+u-inline
+u-inlineBlock 
+u-table 
+u-tableCell 
+u-tableRow 
 
 .u-pullLeft
 .u-pullRight
