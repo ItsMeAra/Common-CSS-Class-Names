@@ -1,8 +1,6 @@
 # CSS Naming Conventions
 
-A collection of common CSS naming conventions based on Components, Subcomponents, and Modifiers. 
-
-Over the last few years I've enjoyed seeing the evolution of [HTML semantics & front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/). It's introduced clever methodologies that make CSS more scalable and intuitive, such as [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki), [SMACSS](http://smacss.com), and the [BEM Methodology](http://bem.info/). 
+A collection of common CSS naming conventions based on [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) and the [BEM Methodology](http://bem.info/). 
 
 While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions.  
 
