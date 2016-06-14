@@ -8,13 +8,13 @@ While using these approaches in [my projects](https://css-tricks.com/design-syst
 
 ## The Naming Convention
 
-My prefered naming conventions follows the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) very closely:
+My prefered naming conventions is similar to the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md):
 
 ```
 /* Components */
-.myComponent {}                     /* Components - camelCase component name */
-.myComponent--modifier {}           /* Modifiers - Two dashes for the modifier */
-  .myComponent-subComponent {}      /* Subcomponent - One dash for the subcomponent */
+.myComponent {}                     /* Component - camelCase component name */
+.myComponent--modifier {}           /* Modifier - Two dashes for the modifier */
+  .myComponent-descendant {}        /* Descendent - One dash for the subcomponent */
 
 /* States */
 .myComponent.is-active {}           /* State classes are chained */
@@ -106,8 +106,8 @@ My prefered naming conventions follows the [SUIT CSS naming conventions](https:/
 
 .accordion
   .accordion-panel
-    .accordion-panel-trigger
-    .accordion-panel-content
+  .accordion-trigger
+  .accordion-content
 .accordion--vertical
 .accordion--horizontal
 
