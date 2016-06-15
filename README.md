@@ -11,10 +11,10 @@ While using these approaches in [my projects](https://css-tricks.com/design-syst
 My prefered naming conventions is similar to the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md):
 
 ```
-/* Components */
-.myComponent {}                     /* Component - camelCase component name */
-.myComponent--modifier {}           /* Modifier - Two dashes for the modifier */
-  .myComponent-descendant {}        /* Descendent - One dash for the subcomponent */
+/* Components (blocks) */
+.myComponent {}                     /* Block - camelCase the component (block) name */
+.myComponent-descendant {}          /* Element - One dash for a descendant element */
+.myComponent--modifier {}           /* Modifier - Two dashes for the modifier of the component */
 
 /* States */
 .myComponent.is-active {}           /* State classes are chained */
@@ -217,10 +217,11 @@ My prefered naming conventions is similar to the [SUIT CSS naming conventions](h
 .navbar
 
 .icon
-.icon--xsm
+.icon--xs
 .icon--sm
 .icon--lg
-.icon--xlg
+.icon--xl
+.icon--xxl
 
 .siteWrapper  
 .siteHeader
@@ -229,17 +230,16 @@ My prefered naming conventions is similar to the [SUIT CSS naming conventions](h
 .strip
 .strip--light
 .strip--dark
-.strip--xsm
+.strip--xs
 .strip--sm
 .strip--lg
-.strip--xlg
+.strip--xl
   
 ```
 
 
 ## States
 State classes are prefixed with a keyword that makes sense for the state.
-
 ```
 .is-active
 .is-animating
@@ -252,15 +252,16 @@ State classes are prefixed with a keyword that makes sense for the state.
 
 
 ## Objects
-Object classes are prefixed with `o-`
-
+Object classes are prefixed with `o-`  
+Ideally, these are sets of CSS you find yourself re-using accross multiple components. 
+Instead of writing them over and over, we extract them as an object and re-use the class.
 ```
 .o-flexEmbed
   .o-flexEmbed-ratio
-  .o-flexEmbed-ratio--3by1
-  .o-flexEmbed-ratio--2by1
-  .o-flexEmbed-ratio--16by9
-  .o-flexEmbed-ratio--4by3
+  .o-flexEmbed-ratio--3x1
+  .o-flexEmbed-ratio--2x1
+  .o-flexEmbed-ratio--16x9
+  .o-flexEmbed-ratio--4x3
   .o-flexEmbed-content
 
 .o-nav
@@ -270,10 +271,10 @@ Object classes are prefixed with `o-`
 .o-nav--keywords
 
 .o-island
-.o-island--xsm
+.o-island--xs
 .o-island--sm
 .o-island--lg
-.o-island--xlg
+.o-island--xl
 
 /** 
  * Media 
@@ -302,24 +303,29 @@ Object classes are prefixed with `o-`
 
 ## Utility 
 Utility classes are prefixed with `u-`
-
 ```
-.u-baseSpacing
-.u-baseSpacing--top
-.u-baseSpacing--bottom
-.u-baseSpacing--left
-.u-baseSpacing--right
+.u-baseMargin
+.u-baseMargin--top
+.u-baseMargin--bottom
+.u-baseMargin--left
+.u-baseMargin--right
+
+.u-basePadding
+.u-basePadding--top
+.u-basePadding--bottom
+.u-basePadding--left
+.u-basePadding--right
 
 .u-clearfix
 
-u-block
-u-hidden
-u-hiddenVisually 
-u-inline
-u-inlineBlock 
-u-table 
-u-tableCell 
-u-tableRow 
+u-displayBlock
+u-displayNone
+u-displayHidden 
+u-displayInline
+u-displayInlineBlock 
+u-displayTable 
+u-displayTableCell 
+u-displayTableRow 
 
 .u-pullLeft
 .u-pullRight
