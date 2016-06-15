@@ -8,7 +8,7 @@ While using these approaches in [my projects](https://css-tricks.com/design-syst
 
 ## The Naming Convention
 
-My prefered naming conventions is similar to the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md):
+My prefered naming conventions:
 
 ```
 /* Components (blocks) */
