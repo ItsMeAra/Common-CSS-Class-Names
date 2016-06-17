@@ -2,28 +2,25 @@
 
 A collection of common CSS naming conventions based on [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) and the [BEM Methodology](http://bem.info/). 
 
-While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions.  
+While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions elements, components, and utility classes.  
 
 ---
 
 ## The Naming Convention
 
-My prefered naming conventions:
+My prefered naming convention follows the SUIT CSS [Naming Conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) very closely:
 
 ```
 /* Components (blocks) */
 .myComponent {}                     /* Block - camelCase the component (block) name */
-.myComponent-descendant {}          /* Element - One dash for a descendant element */
+.myComponent-descendant {}          /* Element - One dash for a descendant of the component */
 .myComponent--modifier {}           /* Modifier - Two dashes for the modifier of the component */
-
-/* States */
-.myComponent.is-active {}           /* State classes are chained */
-
-/* Objects */
-.o-myObject {}                      /* Object classes are prefixed with `o-` */
 
 /* Utils */
 .u-myHelper {}                      /* Utility classes are prefixed with `u-` */
+
+/* States */
+.myComponent.is-active {}           /* State classes are chained */
 
 /* Javascript Hooks */
 .js-myComponent {}                  /* JavaScript classes are prefixed with `js-` and ONLY used as a JS hook */
@@ -49,6 +46,8 @@ My prefered naming conventions:
   .list-item
 .list--bare
 .list--group
+.list--ordered
+.list--unOrdered
 
 .form
   .form-fields
@@ -69,7 +68,8 @@ My prefered naming conventions:
 .img
 .img--responsive
 .img--responsiveFill
-.img--round
+.img--circle
+.img--rounded
 .img--bordered
 
 .table
@@ -82,13 +82,19 @@ My prefered naming conventions:
 .table--bordered
 .table--responsive
 
-.btn
-.btn--default
-.btn--primary
-.btn--secondary
-.btn--pill
-.btn--soft
-.btn--hard
+.button
+.button--default
+.button--primary
+.button--secondary
+.button--pill
+.button--soft
+.button--hard
+.button--circle
+.button--xs
+.button--sm
+.button--lg
+.button--xl
+.button--xxl
 
 ```
 
@@ -112,10 +118,13 @@ My prefered naming conventions:
 .accordion--horizontal
 
 .badge
+.badge--xs
 .badge--sm
 .badge--lg
+.badge--xl
 
 .btnGroup
+.btnGroup--stacked
 
 .carousel
   .carousel-item
@@ -124,6 +133,7 @@ My prefered naming conventions:
 .dropdown
   .dropdown-trigger
   .dropdown-content
+  .dropdown-data
 
 .grid
 .grid--centered
@@ -215,6 +225,8 @@ My prefered naming conventions:
   .modal-footer
 
 .navbar
+.navbar--primary
+.navbar--secondary
 
 .icon
 .icon--xs
@@ -234,7 +246,49 @@ My prefered naming conventions:
 .strip--sm
 .strip--lg
 .strip--xl
-  
+
+.flexEmbed
+  .flexEmbed-ratio
+  .flexEmbed-ratio--3x1
+  .flexEmbed-ratio--2x1
+  .flexEmbed-ratio--16x9
+  .flexEmbed-ratio--4x3
+  .flexEmbed-content
+
+.nav
+.nav--fit
+.nav--stacked
+.nav--pagination
+.nav--keywords
+
+.island
+.island--xs
+.island--sm
+.island--lg
+.island--xl
+
+/** 
+ * Media 
+ *
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ */
+.media
+  .media-img
+  .media-img--rev
+  .media-body
+
+/** 
+ * Flag 
+ *
+ * http://csswizardry.com/2013/05/the-flag-object/
+ */
+.flag
+  .flag-img
+  .flag-body 
+.flag--top
+.flag--bottom
+.flag--rev
+
 ```
 
 
@@ -247,56 +301,7 @@ State classes are prefixed with a keyword that makes sense for the state.
 .is-hidden
 .is-pressed
 .is-selected
-
-```
-
-
-## Objects
-Object classes are prefixed with `o-`  
-Ideally, these are sets of CSS you find yourself re-using accross multiple components. 
-Instead of writing them over and over, we extract them as an object and re-use the class.
-```
-.o-flexEmbed
-  .o-flexEmbed-ratio
-  .o-flexEmbed-ratio--3x1
-  .o-flexEmbed-ratio--2x1
-  .o-flexEmbed-ratio--16x9
-  .o-flexEmbed-ratio--4x3
-  .o-flexEmbed-content
-
-.o-nav
-.o-nav--fit
-.o-nav--stacked
-.o-nav--pagination
-.o-nav--keywords
-
-.o-island
-.o-island--xs
-.o-island--sm
-.o-island--lg
-.o-island--xl
-
-/** 
- * Media 
- *
- * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
- */
-.o-media
-  .o-media-img
-  .o-media-img--rev
-  .o-media-body
-
-/** 
- * Flag 
- *
- * http://csswizardry.com/2013/05/the-flag-object/
- */
-.o-flag
-  .o-flag-img
-  .o-flag-body 
-.o-flag--top
-.o-flag--bottom
-.o-flag--rev
+.is-finished
 
 ```
 
@@ -316,7 +321,10 @@ Utility classes are prefixed with `u-`
 .u-basePadding--left
 .u-basePadding--right
 
+.u-clear
 .u-clearfix
+.u-clearLeft
+.u-clearRight
 
 u-displayBlock
 u-displayNone
@@ -336,6 +344,7 @@ u-displayTableRow
 .u-textRight
 .u-textAllcaps
 .u-textLowercase
+.u-textUppercase
 .u-textNoWrap
 .u-textTruncate
 .u-textLoud
@@ -351,10 +360,8 @@ Heavily inspired by these amazing projects & people:
 - [CSS Components, Modifiers, and Subcomponents Collection](https://github.com/bjankord/CSS-Components-Modifiers-And-Subcomponents-Collection)
 - [SUIT CSS](https://suitcss.github.io/) by [Nicolas Gallagher](https://twitter.com/necolas)
 - [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) by [Nicole Sullivan](https://twitter.com/stubbornella)
-- [SMACSS](http://smacss.com) by [Johnathan Snook](https://twitter.com/snookca)
 - [BEM Methodology](http://bem.info/) by Yandex
 - [Inuit CSS](http://inuitcss.com/) by [Harry Roberts](https://twitter.com/csswizardry)
-- [A BEM syntax with UX in mind](http://montagestudio.com/blog/2013/10/24/bem-syntax-with-ux-in-mind/)
 - [Bootstrap](http://getbootstrap.com/)
 
 ## License
