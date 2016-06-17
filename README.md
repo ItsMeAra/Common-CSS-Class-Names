@@ -1,8 +1,8 @@
-# CSS Naming Conventions
+# Common CSS Class Names
 
-A collection of common CSS naming conventions based on [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) and the [BEM Methodology](http://bem.info/). 
+A collection of common CSS name ideas for a naming convention based on [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) and the [BEM Methodology](http://bem.info/). 
 
-While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of common CSS naming conventions elements, components, and utility classes.  
+While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of commonly used CSS names for elements, components, and utility classes.  
 
 ---
 
