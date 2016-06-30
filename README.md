@@ -1,6 +1,6 @@
 # Common CSS Class Names
 
-While using these approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of commonly used CSS names for elements, components, and utility classes.  
+While using [Object Oriented CSS](https://github.com/stubbornella/oocss/wiki) and [BEM Methodology](http://bem.info/) approaches in [my projects](https://css-tricks.com/design-systems-building-future/), I discovered that naming things is easily one of the most frustrating parts of development. In an effort to make it easier on myself and others who feel the same, I've put together a list of commonly used class names for elements, components, and utility classes.  
 
 ---
 
